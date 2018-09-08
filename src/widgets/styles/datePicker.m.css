@@ -1,0 +1,13 @@
+.root {
+	text-align: center;
+	padding: 100px 0 0 0;
+	color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.calendarcontainer {
+  background: #fff;
+}

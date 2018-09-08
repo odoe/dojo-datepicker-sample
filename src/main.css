@@ -1,0 +1,18 @@
+/* Put your styles and imports here */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	background: #1d1f20;
+}
+input {
+  font-size: 1.2em;
+}
+
+button {
+  color: #fff;
+  background: rgb(16, 184, 10);
+  padding: 1em;
+}
