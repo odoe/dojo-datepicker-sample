@@ -10,8 +10,15 @@ interface DatePickerProperties {
   selectedDate: Date;
 }
 
+interface DatePickerState {
+  month?: number;
+  year?: number;
+  selectedDate?: Date;
+  visible?: boolean;
+}
+
 export class DatePicker extends WidgetBase<DatePickerProperties> {
-  state = {
+  state: DatePickerState = {
     month: 1,
     selectedDate: this.properties.selectedDate,
     year: 2018,
@@ -70,7 +77,7 @@ export class DatePicker extends WidgetBase<DatePickerProperties> {
     ]);
   }
 
-  protected setState(state: any) {
+  protected setState(state: DatePickerState) {
     this.state = { ...this.state, ...state };
     this.invalidate();
   }
